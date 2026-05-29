@@ -21,21 +21,50 @@
         }
 
         .hero {
-            background: #111827;
+            background: linear-gradient(135deg, #111827, #1e293b);
             color: white;
-            padding: 36px;
+            padding: 38px;
             border-radius: 18px;
             margin-bottom: 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
         }
 
         .hero h1 {
             margin: 0 0 10px 0;
-            font-size: 34px;
+            font-size: 36px;
+            letter-spacing: -0.5px;
         }
 
         .hero p {
-            margin: 6px 0;
+            margin:  }
+
+        .hero p {
+            margin: 7px 0;
             color: #d1d5db;
+            max-width: 850px;
+            line-height: 1.5;
+        }
+
+        .hero-actions {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .hero-actions a {
+            display: inline-block;
+            background: #ffffff;
+            color: #111827;
+            padding: 11px 17px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        .hero-actions a:hover {
+            background: #e5e7eb;
         }
 
         .summary-grid {
@@ -74,6 +103,10 @@
 
         .methodology h2 {
             margin-top: 0;
+        }
+
+        .methodology p {
+            line-height: 1.6;
         }
 
         .group-section {
@@ -190,6 +223,20 @@
             margin-top: 50px;
             text-align: center;
         }
+
+        @media (max-width: 700px) {
+            .hero {
+                padding: 28px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .score-row {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -198,8 +245,17 @@
 
         <header class="hero">
             <h1>EPIS Topic Gap Analyzer</h1>
-            <p>Prototype report based on EPIS publication PDFs and keyword-based topic scoring.</p>
-            <p>Generated on: 2026-05-29 20:47:58</p>
+            <p>
+                Prototype report based on EPIS publication PDFs, keyword-based topic scoring,
+                and working-group relevance filtering.
+            </p>
+            <p>Generated on: 2026-05-29 22:44:35</p>
+
+            <div class="hero-actions">
+                <a href="EPIS_Topic_Gap_Analyzer_Explainer_Revised.pdf" target="_blank" rel="noopener noreferrer">
+                    Open project explainer PDF
+                </a>
+            </div>
         </header>
 
         <section class="summary-grid">
